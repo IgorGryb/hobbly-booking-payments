@@ -1,0 +1,23 @@
+[
+  {
+    "idempotency_key": "KEY-001",
+    "booking_id": "B1",
+    "status": "captured",
+    "amount_cents": 10000,
+    "idempotent_replay": false
+  },
+  {
+    "idempotency_key": "KEY-001",
+    "booking_id": "B1",
+    "status": "captured",
+    "amount_cents": 10000,
+    "idempotent_replay": true
+  },
+  {
+    "idempotency_key": "KEY-002",
+    "booking_id": "B2",
+    "status": "failed",
+    "amount_cents": 10000,
+    "idempotent_replay": false
+  }
+]

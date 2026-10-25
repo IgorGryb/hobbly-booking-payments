@@ -1,0 +1,34 @@
+{
+  "project_id": "PRJ-HOBBLY-PROTOTYPE",
+  "claim_scope": "synthetic transaction-state demonstration",
+  "happy_path": {
+    "idempotency_key": "KEY-001",
+    "booking_id": "B1",
+    "status": "captured",
+    "amount_cents": 10000,
+    "idempotent_replay": false
+  },
+  "idempotent_replay": {
+    "idempotency_key": "KEY-001",
+    "booking_id": "B1",
+    "status": "captured",
+    "amount_cents": 10000,
+    "idempotent_replay": true
+  },
+  "failure_path": {
+    "idempotency_key": "KEY-002",
+    "booking_id": "B2",
+    "status": "failed",
+    "amount_cents": 10000,
+    "idempotent_replay": false
+  },
+  "failure_booking_state": "payment_failed",
+  "invalid_transition_rejected": true,
+  "economics": {
+    "gross_value_cents": 10000,
+    "platform_revenue_cents": 500,
+    "modeled_contribution_cents": -5000,
+    "assumption": "synthetic unit economics"
+  },
+  "prediction_passed": true
+}

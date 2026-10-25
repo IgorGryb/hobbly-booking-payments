@@ -1,0 +1,19 @@
+{
+  "stable_id": "ARTIFACT-PRJ-HOBBLY-PROTOTYPE",
+  "project_id": "PRJ-HOBBLY-PROTOTYPE",
+  "title": "Hobbly — Booking and Payment Vertical Slice",
+  "sequence": 3,
+  "lifecycle_stage": "test",
+  "source_ids": [
+    "1. Portfolio/Hobbly Payments/PROJECT-RECORD.md"
+  ],
+  "claim_ids": [
+    "CLM-PRJ-HOBBLY-PROTOTYPE"
+  ],
+  "evidence_level": "tested-after-make-validate",
+  "confidentiality": "private",
+  "validation_status": "technical-validation-pending",
+  "reproduce_command": "make validate",
+  "commit_sha": "set-by-validation-report",
+  "created_at": "2026-10-25"
+}

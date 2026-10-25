@@ -1,0 +1,10 @@
+flowchart LR
+  S[Sources and assumptions] --> P[Pre-test prediction]
+  P --> D[Deterministic data]
+  D --> M[Hobbly — Booking and Payment Vertical Slice mechanism]
+  M --> B[Baseline / control]
+  M --> N[Negative test]
+  B --> R[Results]
+  N --> R
+  R --> E[Evidence manifest]
+  E --> C[Case-study draft]

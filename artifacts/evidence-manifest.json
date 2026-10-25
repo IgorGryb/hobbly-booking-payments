@@ -1,0 +1,28 @@
+{
+  "project_id": "PRJ-HOBBLY-PROTOTYPE",
+  "generated": "2026-10-25",
+  "data_class": "synthetic",
+  "artifacts": [
+    {
+      "artifact_id": "ART-D51703092B1E",
+      "path": "artifacts/results.json",
+      "sha256": "b371dd479a4dc96ffed3bbc8dca6cc1607fd6c5985c4a3250225e98149999803",
+      "validation_status": "tested",
+      "reproduce_command": "make reproduce"
+    },
+    {
+      "artifact_id": "ART-DA9E42CD6E82",
+      "path": "artifacts/transaction-log.json",
+      "sha256": "e8315f9c42aae40d2c4a3e3ec34d35d41ee96b38d8d52e0d62e73bae8e8e7fbe",
+      "validation_status": "tested",
+      "reproduce_command": "make reproduce"
+    },
+    {
+      "artifact_id": "ART-E92433BEA23C",
+      "path": "artifacts/demo.sqlite",
+      "sha256": "d60f372733dfe1e018a76c2f16ed7807b9ed31b8b4894bd099452be11f719bc1",
+      "validation_status": "tested",
+      "reproduce_command": "make reproduce"
+    }
+  ]
+}
