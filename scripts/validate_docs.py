@@ -11,7 +11,8 @@ REQUIRED = [
     "docs/LIMITATIONS.md", "docs/DOSSIER.md", "docs/CASE-STUDY.md",
     "docs/PROJECT-OVERVIEW.md", "docs/WEB-COPY.md", "docs/DEMO-GUIDE.md",
     "docs/INTERVIEW-NARRATIVE.md", "docs/ARCHITECTURE.mmd",
-    "docs/POST-MORTEM.md", "artifacts/results.json", "artifacts/evidence-manifest.json",
+    "docs/POST-MORTEM.md", "docs/DEVELOPMENT-PATH.md",
+    "docs/FULL-PROJECT-BLUEPRINT.md", "artifacts/results.json", "artifacts/evidence-manifest.json",
 ]
 missing = [name for name in REQUIRED if not (ROOT / name).is_file()]
 if missing:
