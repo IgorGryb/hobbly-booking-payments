@@ -1,5 +1,8 @@
 # Source-grounded development path — Hobbly
 
+> Controlling management update (2026-10-26): [Management dossier](MANAGEMENT-DOSSIER.md) defines business, product, operating, financial and technology-management scope. User practice and production implementation are not documentary gates. Earlier technical content below remains bounded supporting material, not the full portfolio mandate.
+
+
 > Status: enrichment specification. The current executable prototype is a technical baseline, not the finished portfolio case.
 
 ## Verified inputs

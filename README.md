@@ -1,5 +1,8 @@
 # Hobbly — Booking and Payment Vertical Slice
 
+> Controlling management update (2026-10-26): [Management dossier](docs/MANAGEMENT-DOSSIER.md) defines business, product, operating, financial and technology-management scope. User practice and production implementation are not documentary gates. Earlier technical content below remains bounded supporting material, not the full portfolio mandate.
+
+
 Private, lightweight evidence repository. The current executable is a narrow technical baseline; the enriched portfolio case remains specified and queued.
 
 ## Reproduce
