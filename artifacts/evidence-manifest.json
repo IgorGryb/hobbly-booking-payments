@@ -20,7 +20,7 @@
     {
       "artifact_id": "ART-E92433BEA23C",
       "path": "artifacts/demo.sqlite",
-      "sha256": "d60f372733dfe1e018a76c2f16ed7807b9ed31b8b4894bd099452be11f719bc1",
+      "sha256": "bb04501faf60baa04e191c8023eb3161a73ba75c09a0d9daae8b5610ca90bc1c",
       "validation_status": "tested",
       "reproduce_command": "make reproduce"
     }

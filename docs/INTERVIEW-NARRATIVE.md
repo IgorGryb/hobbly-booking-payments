@@ -4,7 +4,7 @@
 
 **Choice:** I selected a narrow vertical slice with an explicit baseline and falsification criterion instead of treating existing documentation as implementation evidence.
 
-**Execution:** SQLite-backed state machine with explicit transitions, inventory reservation, simulated authorization/capture, idempotency ledger and negative-path tests.
+**Execution:** SQLite-backed sequential booking/capture reference with key-conflict checks, cancellation, full refund and reconciliation; no separate authorization stage, live PSP or production concurrency guarantee.
 
 **Mistake risk:** the fixture can overstate generality. I address that by labeling provenance, keeping alternative explanations and separating technical from external validation.
 

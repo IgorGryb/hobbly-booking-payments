@@ -8,7 +8,7 @@ Can a narrow booking flow maintain valid states, inventory and payment idempoten
 
 ## Mechanism
 
-SQLite-backed state machine with explicit transitions, inventory reservation, simulated authorization/capture, idempotency ledger and negative-path tests.
+SQLite-backed sequential booking/capture reference with key-conflict checks, cancellation, full refund and reconciliation; no separate authorization stage, live PSP or production concurrency guarantee.
 
 ## Evidence chain
 

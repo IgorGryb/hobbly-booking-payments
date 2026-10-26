@@ -4,7 +4,7 @@
 
 Can a narrow booking flow maintain valid states, inventory and payment idempotency through happy-path and failure scenarios?
 
-The project turns a broad platform concept into one deterministic vertical slice. SQLite-backed state machine with explicit transitions, inventory reservation, simulated authorization/capture, idempotency ledger and negative-path tests.
+The project turns a broad platform concept into one deterministic vertical slice. SQLite-backed sequential booking/capture reference with key-conflict checks, cancellation, full refund and reconciliation; no separate authorization stage, live PSP or production concurrency guarantee.
 
 **Evidence available:** source map, pre-test prediction, code, unit and negative tests, machine-readable result and SHA-256 evidence manifest.
 
