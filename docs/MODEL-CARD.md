@@ -2,7 +2,7 @@
 
 ## Method
 
-SQLite-backed state machine with explicit transitions, inventory reservation, simulated authorization/capture, idempotency ledger and negative-path tests.
+SQLite-backed single-process state reference: reservation, simulated capture/failure, cancellation, full refund, key-conflict checks and capture/refund reconciliation. No separate authorization stage, live payment provider, settlement, partial refund or chargeback is implemented. Concurrent reservation/payment safety is not established; production use requires atomic transactions, provider webhook reconciliation and independent security review.
 
 ## Intended use
 

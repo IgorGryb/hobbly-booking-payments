@@ -16,5 +16,9 @@ docs:
 
 validate: test reproduce docs
 
+.PHONY: management-review
+management-review: test
+	PYTHONPATH=src $(PYTHON) scripts/review_decision_model.py
+
 clean:
 	$(PYTHON) -c 'from pathlib import Path; [(p.unlink()) for p in Path("artifacts").glob("*.json") if p.name != "README.json"]'

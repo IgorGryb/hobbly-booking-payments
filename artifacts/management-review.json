@@ -1,0 +1,37 @@
+{
+  "id": "HOBBLY-MANAGEMENT-REVIEW-001",
+  "scope": "synthetic sequential states and contribution arithmetic",
+  "capture": {
+    "idempotency_key": "K",
+    "booking_id": "B",
+    "status": "captured",
+    "amount_cents": 5000,
+    "idempotent_replay": false
+  },
+  "refund": {
+    "idempotency_key": "R",
+    "booking_id": "B",
+    "amount_cents": 5000,
+    "idempotent_replay": false
+  },
+  "reconciliation": {
+    "captured_cents": 5000,
+    "refunded_cents": 5000,
+    "net_cents": 0
+  },
+  "key_conflict_rejected": true,
+  "base_contribution": 2.0,
+  "negative_contribution": -0.5,
+  "support_break_even": 3.5,
+  "unit": "EUR/completed booking",
+  "source_hashes": {
+    "src/hobbly/core.py": "7f5f79e56264f69a6767916291ef369999589718cbd0622c9e1b8f71e3662992",
+    "00. ARCHIVE SYSTEM/portfolio/MANAGEMENT-VALIDATION-CASES.yaml": "e8e011e4a139e8dffd5dfd1743f8f4e045f650a06879b8b2e83c18de44fc5652"
+  },
+  "limits": [
+    "No live PSP",
+    "No concurrent-safety claim",
+    "No measured support cost",
+    "No regulatory compliance claim"
+  ]
+}
