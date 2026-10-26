@@ -43,3 +43,9 @@ Synthetic payment state tests do not establish provider integration, fraud preve
 Validate support/refund workload assumptions and compare buy versus partner delivery.
 
 [Full management dossier](MANAGEMENT-DOSSIER.md)
+
+## Technical and cross-domain foundation
+
+This design preserves the technical, product, operating and financial strands together. Candidate connections: Product strategy connected to transaction reliability; Management metrics backed by financial and data controls; Advanced technical options with explicit activation conditions.
+
+The full dossier states the source programs, mechanisms, integration risks and comparison tests. These are development options, not established synergistic returns.
