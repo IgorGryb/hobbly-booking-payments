@@ -1,0 +1,102 @@
+openapi: 3.1.0
+info:
+  title: Hobbly Transaction State Machine & Escrow API
+  description: High-integrity transaction state engine, idempotent payment capture orchestration, and dual-entry escrow reconciliation for service marketplaces.
+  version: 1.0.0
+  contact:
+    name: Igor Grybek
+    url: https://github.com/IgorGryb/hobbly-booking-payments
+paths:
+  /v1/listings/{listing_id}/reserve:
+    post:
+      summary: Atomically lock inventory slot and create pending booking
+      operationId: reserveInventorySlot
+      parameters:
+        - name: listing_id
+          in: path
+          required: true
+          schema:
+            type: string
+            example: "LISTING-SAIL-01"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [customer_ref, slots_requested]
+              properties:
+                customer_ref:
+                  type: string
+                  example: "CUST-9842"
+                slots_requested:
+                  type: integer
+                  default: 1
+      responses:
+        '201':
+          description: Slot reserved; temporary hold placed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  booking_id:
+                    type: string
+                    example: "BKG-2026-8812"
+                  state:
+                    type: string
+                    example: "PENDING_PAYMENT"
+                  hold_expires_at:
+                    type: string
+                    format: date-time
+        '409':
+          description: Capacity unavailable; slot lock failed
+
+  /v1/payments/capture:
+    post:
+      summary: Idempotently capture payment and confirm booking
+      operationId: captureBookingPayment
+      parameters:
+        - name: Idempotency-Key
+          in: header
+          required: true
+          schema:
+            type: string
+            example: "idem_key_9f8e7d6c"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [booking_id, amount_cents, currency, payment_token]
+              properties:
+                booking_id:
+                  type: string
+                amount_cents:
+                  type: integer
+                  example: 5000
+                currency:
+                  type: string
+                  example: "EUR"
+                payment_token:
+                  type: string
+                  example: "tok_visa_4242"
+      responses:
+        '200':
+          description: Payment captured; booking moved to CONFIRMED
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  booking_id:
+                    type: string
+                  state:
+                    type: string
+                    example: "CONFIRMED"
+                  captured_amount:
+                    type: integer
+                    example: 5000
+        '409':
+          description: Conflicting idempotency key or booking mismatch

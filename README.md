@@ -1,8 +1,11 @@
 # Hobbly — Transaction State Machine & Services Platform
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![CI](https://github.com/IgorGryb/hobbly-booking-payments/actions/workflows/ci.yml/badge.svg)](https://github.com/IgorGryb/hobbly-booking-payments/actions)
 [![Tests](https://img.shields.io/badge/Tests-Passing%20(8%2F8)-success.svg)](tests/)
 [![Architecture](https://img.shields.io/badge/Architecture-Deterministic%20FSM-orange.svg)](#solution--decision-architecture)
+[![OpenAPI 3.1](https://img.shields.io/badge/OpenAPI-3.1%20Contract-green.svg)](api/openapi.yaml)
+[![ADRs](https://img.shields.io/badge/ADR-Architecture%20Decisions-purple.svg)](docs/adr/)
 [![Status](https://img.shields.io/badge/Status-R%26D%20Reference%20Architecture-informational.svg)](#research-integrity--disclaimer)
 
 > **Architectural Mission:** Protecting marketplace contribution margins by replacing fragile, ad-hoc booking logic with a deterministic finite state machine (FSM) that automates payment escrow, exception handling, and dispute resolution.
