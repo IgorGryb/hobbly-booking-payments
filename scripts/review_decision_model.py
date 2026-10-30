@@ -11,7 +11,7 @@ def main():
     except ValueError: conflict=True
     s.cancel('B'); refund=s.refund('B','R'); repeat=s.refund('B','R')
     s.book('B2','L','another-synthetic'); balance=s.reconcile()
-    source=ROOT.parents[1]/'00. ARCHIVE SYSTEM/portfolio/MANAGEMENT-VALIDATION-CASES.yaml'
+    source=ROOT.parents[1]/'standards/validation-cases.yaml'
     case=next(x for x in json.loads(source.read_text())['cases'] if x['project']=='Hobbly'); p=case['inputs']
     revenue=p['booking_value']*p['take_rate']; support_limit=revenue-p['payment_cost']-p['expected_loss']
     base=support_limit-p['support_cost']; negative=support_limit-case['negative_change']['support_cost']

@@ -26,7 +26,7 @@
   "unit": "EUR/completed booking",
   "source_hashes": {
     "src/hobbly/core.py": "7f5f79e56264f69a6767916291ef369999589718cbd0622c9e1b8f71e3662992",
-    "00. ARCHIVE SYSTEM/portfolio/MANAGEMENT-VALIDATION-CASES.yaml": "e8e011e4a139e8dffd5dfd1743f8f4e045f650a06879b8b2e83c18de44fc5652"
+    "standards/validation-cases.yaml": "e8e011e4a139e8dffd5dfd1743f8f4e045f650a06879b8b2e83c18de44fc5652"
   },
   "limits": [
     "No live PSP",

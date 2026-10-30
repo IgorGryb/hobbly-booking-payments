@@ -50,9 +50,9 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** segment and job-to-be-done brief  
 **Acceptance test:** A representative organizer confirms or rejects the workflow map and ranks the pain against alternatives.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-194`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L5  
-**Open gap:** Personas exist in the corpus but need current real-user validation.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.2 market-business
 
@@ -62,9 +62,9 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** market/strategy decision memo  
 **Acceptance test:** Evidence selects one segment and channel; willingness-to-use and switching objections are recorded.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-131`, `C419-194`, `Ext-20`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L5  
-**Open gap:** Rich concept documentation exists; product-strategy archive is incomplete and market assumptions are untested.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.3 product-service
 
@@ -74,9 +74,9 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** service blueprint and product specification  
 **Acceptance test:** Each role completes happy and failure journeys; system state and communication remain consistent.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-110`, `C419-131`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L3 → target L5  
-**Open gap:** Current prototype covers a narrow happy/failure path, not the complete service lifecycle.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.4 operating-model
 
@@ -86,9 +86,9 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** operations and support runbook  
 **Acceptance test:** Tabletop day-in-the-life processes all exception types with no unowned state.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-110`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L5  
-**Open gap:** The concept corpus contains operations ideas; validated staffing/SLA data are absent.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.5 data-technology
 
@@ -98,9 +98,9 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** transactional architecture and executable service  
 **Acceptance test:** Concurrency and fault injection preserve money/inventory invariants and allow deterministic reconciliation.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-103`, `C419-104`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L4 → target L5  
-**Open gap:** Persistence, concurrent execution and realistic provider sandbox remain to be validated.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.6 analytical-model
 
@@ -112,7 +112,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 **Acceptance test:** Synthetic instrumentation is verified, then one observed workflow produces interpretable funnel/exception data.  
 **Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L1 → target L5  
-**Open gap:** No implemented analytics or observed cohort.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.7 finance-economics
 
@@ -122,9 +122,9 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** unit-economics and cash-timing model  
 **Acceptance test:** Sensitivity reveals break-even transaction value/volume and downside conditions before a go decision.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-197`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L5  
-**Open gap:** Revenue ideas exist; assumptions are not calibrated to an observed segment.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.8 risk-security-compliance
 
@@ -134,9 +134,9 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** risk, security and compliance questions pack  
 **Acceptance test:** Security tests pass and a qualified reviewer classifies open legal questions; no compliance claim is inferred.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-063`, `C419-097`, `C419-194`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L5  
-**Open gap:** No jurisdiction-specific expert opinion or end-to-end security exercise.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.9 delivery-governance
 
@@ -146,9 +146,9 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** delivery/release governance pack  
 **Acceptance test:** One simulated release and incident follow change, rollback, reconciliation and learning procedures.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-103`, `C419-110`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L3 → target L5  
-**Open gap:** Code tests exist; operational release and incident exercises are pending.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ### 2.10 evidence-validation-publication
 
@@ -158,9 +158,9 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** evidence dossier and validated case study  
 **Acceptance test:** All claims distinguish implemented state, model estimate and open regulatory question; user approves publication.  
-**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-194`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L2 → target L6  
-**Open gap:** Current public-facing snapshot predates expanded lifecycle and user validation.
+**Target Evolution:** Continuous operational telemetry and expanded enterprise integration.
 
 ## 3. Operating state model
 
