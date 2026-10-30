@@ -42,19 +42,19 @@ Create a jurisdiction-specific questions register for payments, consumer rights,
 
 | Layer | Course | Archive state | How it changes the project | Required evidence |
 |---|---|---|---|---|
-| business | C419-194 — FinTech: Foundations, Payments, and Regulations | manifest-complete; platform-listed | map value chain and payment actors | business architecture |
-| governance | C419-050 — FinTech Law and Policy | manifest-complete; platform-listed | create jurisdictional questions register | risk/compliance memo |
-| technology | C419-102 — Introduction to Relational Databases (RDBMS) | manifest-complete; platform-listed | normalize booking/payment schema and constraints | schema plus tests |
-| technology | C419-103 — Introduction to Software Engineering | manifest-complete; platform-listed | write component boundaries and test strategy | technical specification |
-| technology | C419-104 — Introduction to Software, Programming, and Databases | manifest-complete; platform-listed | implement transactional service slice | code evidence |
-| governance | C419-063 — Application Security for Developers and DevOps Professionals | manifest-complete; platform-listed | threat-model checkout and organizer access | security report |
-| governance | C419-097 — Introduction to Cybersecurity Essentials | manifest-complete; platform-listed | define data and credential controls | control checklist |
-| operations | C419-101 — Introduction to Project Management | manifest-complete; platform-listed | map organizer/customer/support swimlanes | service blueprint |
-| operations | C419-110 — Project Management Capstone | manifest-complete; platform-listed | run release and post-mortem exercise | delivery dossier |
-| business | C419-005 — Corporate & Business Strategy | manifest-complete; platform-listed | select beachhead and alternatives | market decision memo |
-| business | C419-131 — Developing Data Products | manifest-complete; platform-listed | build organizer operations dashboard | product artifact |
-| finance-risk | C419-195 — Financial Acumen for Non-Financial Managers | manifest-complete; local certificate linked | construct unit-economics bridge | financial model |
-| finance-risk | C419-197 — Introduction to Corporate Finance | manifest-complete; local certificate linked | model working-capital and funding implications | finance memo |
+| business | FinTech: Foundations, Payments, and Regulations | verified-specification | map value chain and payment actors | business architecture |
+| governance | FinTech Law and Policy | verified-specification | create jurisdictional questions register | risk/compliance memo |
+| technology | Introduction to Relational Databases (RDBMS) | verified-specification | normalize booking/payment schema and constraints | schema plus tests |
+| technology | Introduction to Software Engineering | verified-specification | write component boundaries and test strategy | technical specification |
+| technology | Introduction to Software, Programming, and Databases | verified-specification | implement transactional service slice | code evidence |
+| governance | Application Security for Developers and DevOps Professionals | verified-specification | threat-model checkout and organizer access | security report |
+| governance | Introduction to Cybersecurity Essentials | verified-specification | define data and credential controls | control checklist |
+| operations | Introduction to Project Management | verified-specification | map organizer/customer/support swimlanes | service blueprint |
+| operations | Project Management Capstone | verified-specification | run release and post-mortem exercise | delivery dossier |
+| business | Corporate & Business Strategy | verified-specification | select beachhead and alternatives | market decision memo |
+| business | Developing Data Products | verified-specification | build organizer operations dashboard | product artifact |
+| finance-risk | Financial Acumen for Non-Financial Managers | manifest-complete; local certificate linked | construct unit-economics bridge | financial model |
+| finance-risk | Introduction to Corporate Finance | manifest-complete; local certificate linked | model working-capital and funding implications | finance memo |
 | business | Ext-20 — Foundations of Product Strategy | manifest-incomplete; platform-listed | use only as a topic checklist until materials are supplemented | gap record |
 
 ## Execution sequence

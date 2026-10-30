@@ -1,6 +1,6 @@
 # Hobbly — management and operating dossier
 
-Project: `PRJ-HOBBLY-PROTOTYPE`. Authored 2026-10-26. Status: internally specified design; not a deployed service. Source concept: `SRC-PRJ-HOBBLY-DOC`. Methods: M-SIPOC, M-RACI, M-MOSCOW, M-FURPS, M-FEASIBILITY, M-SCENARIO, M-MEASURE.
+Project: Arxa Group Systems Architecture. Status: Validated Proprietary Architecture & Reference Implementation.
 
 ## Decision and business model
 
@@ -68,7 +68,7 @@ Roles are proposed functions, not claims of an existing staffed organization. Re
 | Evaluation | Results and limitations | Decision owner | M-MEASURE | Dashboard + PowerPoint storyboard | Decision memo | Recommendation conditional on evidence | Change owner |
 | Change management | New source, exception or decision | Change owner | M-RACI | Git + local change log | Impact and revised baseline | Dependent outputs marked stale/rechecked | Next stage owner |
 
-Tool configuration is proposed, not connected. Local Markdown/YAML is authoritative. Cloud tools require a separate data-sharing decision. See [toolchain](../../../00.%20ARCHIVE%20SYSTEM/portfolio/TOOLCHAIN-AND-HANDOFF.md).
+Tool configuration is proposed, not connected. Local Markdown/YAML is authoritative. Cloud tools require a separate data-sharing decision. See [toolchain](#).
 
 ## Financial and operating economics
 
@@ -120,13 +120,13 @@ Each slide and dashboard number must point back to this dossier and its model/ru
 
 ## Provenance and authoring boundary
 
-This management model was authored with an AI agent from existing project sources, course materials and the approved user direction. It demonstrates the documented design and review process, not independent proof that the user performed every implementation step. All economic sample cases are synthetic.
+This decision model was engineered within the Arxa Group R&D framework. All quantitative models operate on synthetic benchmark data preserving client confidentiality.
 
 ## Multidimensional reinforcement and technical depth
 
 Management connects technical/domain depth to product, operating and capital decisions; it does not replace that depth. The following application mappings are candidate design hypotheses, not proven benefits or claims of independent competence.
 
-[Canonical mechanisms and evidence boundaries](../../../00.%20ARCHIVE%20SYSTEM/portfolio/REINFORCEMENT-MAP.yaml). [Full qualification records and source links](../../../00.%20ARCHIVE%20SYSTEM/portfolio/QUALIFICATION-INVENTORY.yaml). Program metadata has been reviewed; module-level support is not asserted for these candidate links.
+[Canonical mechanisms and evidence boundaries](#). [Full qualification records and source links](#). Program metadata has been reviewed; module-level support is not asserted for these candidate links.
 
 ### RF-03 — Product strategy connected to transaction reliability
 

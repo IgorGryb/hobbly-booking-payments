@@ -50,7 +50,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** segment and job-to-be-done brief  
 **Acceptance test:** A representative organizer confirms or rejects the workflow map and ranks the pain against alternatives.  
-**Course inputs:** `C419-005`, `C419-194`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-194`  
 **Maturity:** current L2 → target L5  
 **Open gap:** Personas exist in the corpus but need current real-user validation.
 
@@ -62,7 +62,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** market/strategy decision memo  
 **Acceptance test:** Evidence selects one segment and channel; willingness-to-use and switching objections are recorded.  
-**Course inputs:** `C419-005`, `C419-131`, `C419-194`, `Ext-20`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-131`, `C419-194`, `Ext-20`  
 **Maturity:** current L2 → target L5  
 **Open gap:** Rich concept documentation exists; product-strategy archive is incomplete and market assumptions are untested.
 
@@ -74,7 +74,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** service blueprint and product specification  
 **Acceptance test:** Each role completes happy and failure journeys; system state and communication remain consistent.  
-**Course inputs:** `C419-101`, `C419-110`, `C419-131`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-110`, `C419-131`  
 **Maturity:** current L3 → target L5  
 **Open gap:** Current prototype covers a narrow happy/failure path, not the complete service lifecycle.
 
@@ -86,7 +86,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** operations and support runbook  
 **Acceptance test:** Tabletop day-in-the-life processes all exception types with no unowned state.  
-**Course inputs:** `C419-101`, `C419-110`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-110`  
 **Maturity:** current L2 → target L5  
 **Open gap:** The concept corpus contains operations ideas; validated staffing/SLA data are absent.
 
@@ -98,7 +98,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** transactional architecture and executable service  
 **Acceptance test:** Concurrency and fault injection preserve money/inventory invariants and allow deterministic reconciliation.  
-**Course inputs:** `C419-102`, `C419-103`, `C419-104`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-103`, `C419-104`  
 **Maturity:** current L4 → target L5  
 **Open gap:** Persistence, concurrent execution and realistic provider sandbox remain to be validated.
 
@@ -110,7 +110,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** analytics specification and organizer dashboard  
 **Acceptance test:** Synthetic instrumentation is verified, then one observed workflow produces interpretable funnel/exception data.  
-**Course inputs:** `C419-131`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling  
 **Maturity:** current L1 → target L5  
 **Open gap:** No implemented analytics or observed cohort.
 
@@ -122,7 +122,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** unit-economics and cash-timing model  
 **Acceptance test:** Sensitivity reveals break-even transaction value/volume and downside conditions before a go decision.  
-**Course inputs:** `C419-195`, `C419-197`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-197`  
 **Maturity:** current L2 → target L5  
 **Open gap:** Revenue ideas exist; assumptions are not calibrated to an observed segment.
 
@@ -134,7 +134,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** risk, security and compliance questions pack  
 **Acceptance test:** Security tests pass and a qualified reviewer classifies open legal questions; no compliance claim is inferred.  
-**Course inputs:** `C419-050`, `C419-063`, `C419-097`, `C419-194`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-063`, `C419-097`, `C419-194`  
 **Maturity:** current L2 → target L5  
 **Open gap:** No jurisdiction-specific expert opinion or end-to-end security exercise.
 
@@ -146,7 +146,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** delivery/release governance pack  
 **Acceptance test:** One simulated release and incident follow change, rollback, reconciliation and learning procedures.  
-**Course inputs:** `C419-101`, `C419-103`, `C419-110`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-103`, `C419-110`  
 **Maturity:** current L3 → target L5  
 **Open gap:** Code tests exist; operational release and incident exercises are pending.
 
@@ -158,7 +158,7 @@ The credible core is a narrow organizer workflow in which inventory, booking, pa
 
 **Required artifact:** evidence dossier and validated case study  
 **Acceptance test:** All claims distinguish implemented state, model estimate and open regulatory question; user approves publication.  
-**Course inputs:** `C419-110`, `C419-194`  
+**Methodological inputs:** Enterprise Systems Architecture & Quantitative Modeling, `C419-194`  
 **Maturity:** current L2 → target L6  
 **Open gap:** Current public-facing snapshot predates expanded lifecycle and user validation.
 
@@ -230,20 +230,20 @@ The prediction, threshold and interpretation owner must be recorded before each 
 
 | Mapping | Layer | Course | Archive state | Practice/test | Evidence target |
 |---|---|---|---|---|---|
-| PRJSRC-0025 | business | C419-194 — FinTech: Foundations, Payments, and Regulations | manifest-complete | map value chain and payment actors | business architecture |
-| PRJSRC-0026 | governance | C419-050 — FinTech Law and Policy | manifest-complete | create jurisdictional questions register | risk/compliance memo |
-| PRJSRC-0027 | technology | C419-102 — Introduction to Relational Databases (RDBMS) | manifest-complete | normalize booking/payment schema and constraints | schema plus tests |
-| PRJSRC-0028 | technology | C419-103 — Introduction to Software Engineering | manifest-complete | write component boundaries and test strategy | technical specification |
-| PRJSRC-0029 | technology | C419-104 — Introduction to Software, Programming, and Databases | manifest-complete | implement transactional service slice | code evidence |
-| PRJSRC-0030 | governance | C419-063 — Application Security for Developers and DevOps Professionals | manifest-complete | threat-model checkout and organizer access | security report |
-| PRJSRC-0031 | governance | C419-097 — Introduction to Cybersecurity Essentials | manifest-complete | define data and credential controls | control checklist |
-| PRJSRC-0032 | operations | C419-101 — Introduction to Project Management | manifest-complete | map organizer/customer/support swimlanes | service blueprint |
-| PRJSRC-0033 | operations | C419-110 — Project Management Capstone | manifest-complete | run release and post-mortem exercise | delivery dossier |
-| PRJSRC-0034 | business | C419-005 — Corporate & Business Strategy | manifest-complete | select beachhead and alternatives | market decision memo |
-| PRJSRC-0035 | business | C419-131 — Developing Data Products | manifest-complete | build organizer operations dashboard | product artifact |
-| PRJSRC-0036 | finance-risk | C419-195 — Financial Acumen for Non-Financial Managers | manifest-complete | construct unit-economics bridge | financial model |
-| PRJSRC-0037 | finance-risk | C419-197 — Introduction to Corporate Finance | manifest-complete | model working-capital and funding implications | finance memo |
-| PRJSRC-0038 | business | Ext-20 — Foundations of Product Strategy | manifest-incomplete | use only as a topic checklist until materials are supplemented | gap record |
+| MOD-SPEC | business | FinTech: Foundations, Payments, and Regulations | manifest-complete | map value chain and payment actors | business architecture |
+| MOD-SPEC | governance | FinTech Law and Policy | manifest-complete | create jurisdictional questions register | risk/compliance memo |
+| MOD-SPEC | technology | Introduction to Relational Databases (RDBMS) | manifest-complete | normalize booking/payment schema and constraints | schema plus tests |
+| MOD-SPEC | technology | Introduction to Software Engineering | manifest-complete | write component boundaries and test strategy | technical specification |
+| MOD-SPEC | technology | Introduction to Software, Programming, and Databases | manifest-complete | implement transactional service slice | code evidence |
+| MOD-SPEC | governance | Application Security for Developers and DevOps Professionals | manifest-complete | threat-model checkout and organizer access | security report |
+| MOD-SPEC | governance | Introduction to Cybersecurity Essentials | manifest-complete | define data and credential controls | control checklist |
+| MOD-SPEC | operations | Introduction to Project Management | manifest-complete | map organizer/customer/support swimlanes | service blueprint |
+| MOD-SPEC | operations | Project Management Capstone | manifest-complete | run release and post-mortem exercise | delivery dossier |
+| MOD-SPEC | business | Corporate & Business Strategy | manifest-complete | select beachhead and alternatives | market decision memo |
+| MOD-SPEC | business | Developing Data Products | manifest-complete | build organizer operations dashboard | product artifact |
+| MOD-SPEC | finance-risk | Financial Acumen for Non-Financial Managers | manifest-complete | construct unit-economics bridge | financial model |
+| MOD-SPEC | finance-risk | Introduction to Corporate Finance | manifest-complete | model working-capital and funding implications | finance memo |
+| MOD-SPEC | business | Ext-20 — Foundations of Product Strategy | manifest-incomplete | use only as a topic checklist until materials are supplemented | gap record |
 
 All rows above currently mean source routing. They become competence evidence only after the stated practice/test is executed and recorded.
 
