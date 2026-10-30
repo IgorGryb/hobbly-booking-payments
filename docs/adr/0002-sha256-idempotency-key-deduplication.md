@@ -19,3 +19,4 @@ Every client payment request carries an `Idempotency-Key` header:
 - First Request: Recorded in the SQLite/Redis store as `IN_FLIGHT`.
 - Matching Replay: Returns the cached receipt without calling the payment gateway again.
 - Conflicting Payload: If the key matches an existing record but the booking ID or amount differs, the request is rejected with `409 CONFLICT` and logged in the security exception queue.
+

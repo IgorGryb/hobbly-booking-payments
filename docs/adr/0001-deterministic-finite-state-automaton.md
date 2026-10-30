@@ -18,3 +18,4 @@ Chosen Option: **Deterministic Finite State Automaton (FSM)**.
 The lifecycle is defined by states $\mathcal{S}$ and transition function $\delta(s, e) \to s'$:
 $$\mathcal{S} = \{ \text{PUBLISHED}, \text{RESERVED}, \text{PENDING\_PAYMENT}, \text{CONFIRMED}, \text{PAYMENT\_FAILED}, \text{CANCELLED}, \text{REFUNDED}, \text{COMPLETED} \}$$
 Invalid transitions (e.g. attempting to cancel an already refunded booking or capturing funds on an expired reservation) are deterministically rejected with strict exception codes.
+

@@ -100,3 +100,4 @@ paths:
                     example: 5000
         '409':
           description: Conflicting idempotency key or booking mismatch
+

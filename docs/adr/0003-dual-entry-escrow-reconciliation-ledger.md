@@ -19,3 +19,4 @@ Chosen Option: **Dual-Entry Transaction Ledger with Breakeven Friction Bounds**.
 - On a €50 booking at a 10% take-rate (€5.00 revenue), fixed processing and loss reserves equal €1.50.
 - Customer support costs must remain strictly below **€3.50 per transaction** to maintain a positive contribution margin.
 - Automated self-service cancellation workflows keep average support friction at €1.50, securing a **40% net contribution margin (+€2.00/booking)**.
+
