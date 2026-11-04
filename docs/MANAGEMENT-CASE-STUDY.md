@@ -12,6 +12,14 @@ A booking-service operating model with explicit transaction economics and except
 
 The design connects source evidence, explicit assumptions, operating ownership and model checks. Its primary output is a decision package that can be handed to an execution team.
 
+## Source vision and first use
+
+A two-sided activity marketplace joined to organizer scheduling, customer management, booking and payment tools.
+
+One organizer segment: verify availability, booking, payment, cancellation and reconciliation under normal and failed transactions.
+
+**Commercial hypothesis:** Organizer software subscription plus a transaction-fee option; take rate, willingness to pay and two-sided growth are unvalidated.
+
 ## Key decision
 
 Describe the end-to-end service, use simulated payments, and validate state transitions before evaluating commercial integrations.
@@ -31,6 +39,12 @@ Contribution per completed booking = fee revenue - payment cost - support cost -
 Testable hypothesis: Exception handling and transaction economics determine viability more than feature breadth.
 
 Negative check: Duplicate callback and payment timeout; no double allocation or recognition of uncollected revenue.
+
+## Technology and evidence status
+
+**Implemented:** A local Python/SQLite transaction-state prototype using synthetic bookings and unit economics; no payment provider connection.
+**Designed standard architecture:** Relational transaction records, capacity and booking states, payment-provider interfaces, idempotent callbacks, reconciliation, access control and observability.
+**Deferred:** Live PSP integration, wallet or card issuance, escrow services, white-label embedding and broad marketplace rollout.
 
 ## Outcome and limits
 

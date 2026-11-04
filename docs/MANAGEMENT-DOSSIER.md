@@ -1,16 +1,21 @@
 # Hobbly — management and operating dossier
 
-Project: Arxa Group Systems Architecture. Status: Validated Proprietary Architecture & Reference Implementation.
+Project: `PRJ-HOBBLY-PROTOTYPE`. Revised 2026-11-04. Status: internally specified design and bounded test; not a deployed service. Source concept: `SRC-PRJ-HOBBLY-DOC`. Presentation layer: `canonical-venture`. Methods: M-SIPOC, M-RACI, M-MOSCOW, M-FURPS, M-FEASIBILITY, M-SCENARIO, M-MEASURE.
 
 ## Decision and business model
 
 A booking-service operating model with explicit transaction economics and exception ownership.
 
+**Source-root business vision (historical concept):** A two-sided activity marketplace joined to organizer scheduling, customer management, booking and payment tools.
+**First bounded use:** One organizer segment: verify availability, booking, payment, cancellation and reconciliation under normal and failed transactions.
 **Problem:** A reservation is not operationally complete until capacity, payment, cancellation and settlement states agree.
 **Customer / decision user:** Activity organizer and customer
 **Payer:** Organizer or transaction commission payer; pricing remains a hypothesis
 **Value proposition (hypothesis):** A consistent booking journey and understandable control of capacity, money and service exceptions.
 
+**Commercial model (hypothesis):** Organizer software subscription plus a transaction-fee option; take rate, willingness to pay and two-sided growth are unvalidated.
+
+**Economic drivers:** subscription fee hypothesis; fee revenue per completed booking; processor and support cost; refund and dispute loss; customer acquisition and retention; payout timing and working capital.
 **Alternatives:**
 
 - Manual calendar and bank transfer: suitable baseline at small scale
@@ -28,6 +33,16 @@ Market size, paid demand, channel conversion and real service delivery are not e
 | HOBBLY-REQ-01 | Capacity and payment state cannot contradict confirmed booking | Reviewer checks the corresponding model/process step; records source, exception and outcome. |
 | HOBBLY-REQ-02 | Duplicate event has one financial effect | Reviewer checks the corresponding model/process step; records source, exception and outcome. |
 | HOBBLY-REQ-03 | Cancellation/refund has an explicit service owner | Reviewer checks the corresponding model/process step; records source, exception and outcome. |
+
+## Five-dimensional operating model
+
+| Dimension | Bounded design |
+|---|---|
+| Technical | Consistent booking/payment states and auditable transaction records. |
+| Business and product | Organizer SaaS and transaction-fee hypothesis inside a staged two-sided marketplace. |
+| Operating | Organizer, customer support and payment partner own booking and exception handoffs. |
+| Financial | Contribution per completed booking after processor, refund, dispute and support costs. |
+| Risk and governance | Test duplicate callbacks, timeouts, mismatches and payment/legal boundaries. |
 
 Should: export a decision memo and traceability view. Could: automate repetitive updates after correctness is established.
 **Will not do:** Real money, production regulatory compliance, assumed licensed payment capability.
@@ -68,7 +83,7 @@ Roles are proposed functions, not claims of an existing staffed organization. Re
 | Evaluation | Results and limitations | Decision owner | M-MEASURE | Dashboard + PowerPoint storyboard | Decision memo | Recommendation conditional on evidence | Change owner |
 | Change management | New source, exception or decision | Change owner | M-RACI | Git + local change log | Impact and revised baseline | Dependent outputs marked stale/rechecked | Next stage owner |
 
-Tool configuration is proposed, not connected. Local Markdown/YAML is authoritative. Cloud tools require a separate data-sharing decision. See [toolchain](#).
+Tool configuration is proposed, not connected. Local Markdown/YAML is authoritative. Cloud tools require a separate data-sharing decision. See [toolchain](../../../00.%20ARCHIVE%20SYSTEM/portfolio/TOOLCHAIN-AND-HANDOFF.md).
 
 ## Financial and operating economics
 
@@ -77,6 +92,10 @@ Contribution per completed booking = fee revenue - payment cost - support cost -
 Estimates must disclose cost population, currency, horizon and baseline. Sensitivity changes one driver or a declared scenario while other external assumptions remain equal. Missing required input makes the result unavailable. No forecast is reported as a realized business result.
 
 ## Technology management and build/buy/partner
+
+**Implemented baseline:** A local Python/SQLite transaction-state prototype using synthetic bookings and unit economics; no payment provider connection.
+**Standard reference architecture (designed, not deployed):** Relational transaction records, capacity and booking states, payment-provider interfaces, idempotent callbacks, reconciliation, access control and observability.
+**Deferred extensions:** Live PSP integration, wallet or card issuance, escrow services, white-label embedding and broad marketplace rollout.
 
 Keep a source/assumption register, a model layer, a review layer and derived communication outputs. Stable IDs connect them. Access labels travel with the data. Maintain exportable local records and a documented exit path before selecting a hosted service.
 
@@ -118,15 +137,33 @@ Sequence: source and mandate → explicit model and handoffs → targeted valida
 
 Each slide and dashboard number must point back to this dossier and its model/run. Storyboard is not a delivered slide deck. No public publishing or external application is performed.
 
+## Qualification and method support
+
+The following are recorded program completions and candidate application routes, not proof of independent competence or implementation:
+- University of Pennsylvania (Wharton) — Fintech: Foundations & Applications of Financial Technology (`recorded_completed`; QUAL-fintech-foundations-and-applications).
+- IBM — IBM Systems Analyst (`recorded_completed`; QUAL-ibm-systems-analyst).
+- IBM — IBM AI Product Manager (`recorded_completed`; QUAL-ibm-ai-product-manager).
+- Stanford Online — Product Marketing & Go-to-Market Strategy (`recorded_completed`; QUAL-product-marketing-go-to-market-strategy).
+- University of Pennsylvania (Wharton) — Business and Financial Modeling (`recorded_completed`; QUAL-business-and-financial-modeling).
+
+Methods are grounded only to the recorded source reading scope:
+- `M-SIPOC` — SIPOC i mapa przepływu; full local syllabus; module transcripts not read in this pass.
+- `M-RACI` — RACI i analiza interesariuszy; full local syllabus; module transcripts not read in this pass.
+- `M-MOSCOW` — MoSCoW i wymagania; full local syllabus; module transcripts not read in this pass.
+- `M-FURPS` — FURPS jako lista NFR; full local syllabus; module transcripts not read in this pass.
+- `M-FEASIBILITY` — DFD, model stanów i build/buy; full local syllabus; module transcripts not read in this pass.
+- `M-SCENARIO` — Przepływy przyrostowe, wrażliwość scenariuszowa i próg rentowności; full transcript.
+- `M-MEASURE` — Dashboard jako wsparcie decyzji; full local syllabus; module transcripts not read in this pass.
+
 ## Provenance and authoring boundary
 
-This decision model was engineered within the Arxa Group R&D framework. All quantitative models operate on synthetic benchmark data preserving client confidentiality.
+This management model was authored with an AI agent from existing project sources, course materials and the approved user direction. It demonstrates the documented design and review process, not independent proof that the user performed every implementation step. All economic sample cases are synthetic.
 
 ## Multidimensional reinforcement and technical depth
 
 Management connects technical/domain depth to product, operating and capital decisions; it does not replace that depth. The following application mappings are candidate design hypotheses, not proven benefits or claims of independent competence.
 
-[Canonical mechanisms and evidence boundaries](#). [Full qualification records and source links](#). Program metadata has been reviewed; module-level support is not asserted for these candidate links.
+[Canonical mechanisms and evidence boundaries](../../../00.%20ARCHIVE%20SYSTEM/portfolio/REINFORCEMENT-MAP.yaml). [Full qualification records and source links](../../../00.%20ARCHIVE%20SYSTEM/portfolio/QUALIFICATION-INVENTORY.yaml). Program metadata has been reviewed; module-level support is not asserted for these candidate links.
 
 ### RF-03 — Product strategy connected to transaction reliability
 
